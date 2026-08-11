@@ -138,11 +138,13 @@ class StatusMenuController: NSObject, NSMenuDelegate, NSWindowDelegate, MenuCont
     @IBAction func editRules(_ sender: AnyObject) {
         guard rulesController == nil else {
             rulesController?.window?.orderFrontRegardless()
+            NSApp.activate(ignoringOtherApps: true)
             return
         }
         rulesController = RulesEditorWindowController.instantiate()
         rulesController?.window?.delegate = self
         rulesController?.window?.orderFrontRegardless()
+        NSApp.activate(ignoringOtherApps: true)
     }
     
     /// Show the *About* window.
@@ -185,11 +187,13 @@ class StatusMenuController: NSObject, NSMenuDelegate, NSWindowDelegate, MenuCont
     @IBAction func showRunningApps(_ sender: AnyObject) {
         guard runningAppsController == nil else {
             runningAppsController?.window?.orderFrontRegardless()
+            NSApp.activate(ignoringOtherApps: true)
             return
         }
         runningAppsController = RunningAppWindowController.instantiate()
         runningAppsController?.window?.delegate = self
         runningAppsController?.window?.orderFrontRegardless()
+        NSApp.activate(ignoringOtherApps: true)
     }
     
     

@@ -33,8 +33,8 @@ class Item: NSObject, Identifiable {
     var notificationSource: NotificationSource { .undefined }
     
     let id: String
-    @objc let url: URL
-    @objc dynamic var behavior: AppBehavior 
+    @objc dynamic var url: URL
+    @objc dynamic var behavior: AppBehavior
     
     @objc var icon: NSImage { NSWorkspace.shared.icon(forFile: self.url.path) }
     @objc var name: String { Bundle(path: self.url.path)?.localizedInfoDictionary?["CFBundleName"] as? String ?? self.url.deletingPathExtension().lastPathComponent }
