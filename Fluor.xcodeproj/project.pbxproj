@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,9 +42,6 @@
 		3F8F93BB1EEAC9B900FCE91F /* RuleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F93BA1EEAC9B900FCE91F /* RuleCellView.swift */; };
 		3F8F93BD1EEAF1EB00FCE91F /* RuleValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F93BC1EEAF1EB00FCE91F /* RuleValueTransformer.swift */; };
 		3F9EDD2A245C7BAF0047D1AC /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EDD29245C7BAF0047D1AC /* MenuItemView.swift */; };
-		3FBE4C262222A3C600782647 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; };
-		3FBE4C272222A3C600782647 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3FBE4C292222AB0200782647 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE4C282222AB0200782647 /* dsa_pub.pem */; };
 		3FC44EFA1D7F169A0065D433 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC44EF91D7F169A0065D433 /* Enums.swift */; };
 		3FC44EFC1D7F16CB0065D433 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC44EFB1D7F16CB0065D433 /* Items.swift */; };
 		3FCD16A51D79793600C57B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD16A41D79793600C57B22 /* AppDelegate.swift */; };
@@ -66,6 +63,7 @@
 		3FE7E0EA1D7CC01B00DC754D /* RulesEditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7E0E81D7CC01B00DC754D /* RulesEditorWindowController.swift */; };
 		3FF2410B1EDB4E0000E524CD /* SwitchMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */; };
 		3FF655CA20751D1600C8D2FC /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF655C820751D1600C8D2FC /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		86411143302B7B2800C2BEB0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86411142302B7B2800C2BEB0 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,7 +73,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3FBE4C272222A3C600782647 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,8 +123,6 @@
 		3F8F93BA1EEAC9B900FCE91F /* RuleCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleCellView.swift; sourceTree = "<group>"; };
 		3F8F93BC1EEAF1EB00FCE91F /* RuleValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleValueTransformer.swift; sourceTree = "<group>"; };
 		3F9EDD29245C7BAF0047D1AC /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
-		3FBE4C202222A22200782647 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../../../../pyroh/Dev/Projects/Fluor/Fluor/Sparkle.framework; sourceTree = "<group>"; };
-		3FBE4C282222AB0200782647 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		3FC44EF91D7F169A0065D433 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		3FC44EFB1D7F16CB0065D433 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		3FCD16A11D79793600C57B22 /* Fluor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +151,7 @@
 		3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchMethodViewController.swift; sourceTree = "<group>"; };
 		3FF655C820751D1600C8D2FC /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		3FF655C920751D1600C8D2FC /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		86411142302B7B2800C2BEB0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../Downloads/Sparkle-2.9.5/Sparkle.framework"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +161,8 @@
 			files = (
 				3FE7B6DB245DF8450027DB39 /* SmoothOperators in Frameworks */,
 				3F16ECDD23E9D1AC008BC89A /* DefaultsWrapper in Frameworks */,
-				3FBE4C262222A3C600782647 /* Sparkle.framework in Frameworks */,
 				3F15629F23FEDD0000CD0773 /* CoreGeometry in Frameworks */,
+				86411143302B7B2800C2BEB0 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +275,7 @@
 		3F7291EC2025BD1E005C9B70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3FBE4C202222A22200782647 /* Sparkle.framework */,
+				86411142302B7B2800C2BEB0 /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -317,7 +313,6 @@
 				3FE7B6CB245DC6180027DB39 /* Localizable.strings */,
 				3FCD16AB1D79793600C57B22 /* Info.plist */,
 				3F0E64141D8A8A59003243FE /* Fluor-Bridging-Header.h */,
-				3FBE4C282222AB0200782647 /* dsa_pub.pem */,
 				3FE784E02053D455007F6200 /* README.md */,
 			);
 			path = Fluor;
@@ -369,8 +364,9 @@
 		3FCD16991D79793600C57B22 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 2660;
 				ORGANIZATIONNAME = Pyrolyse;
 				TargetAttributes = {
 					3FCD16A01D79793600C57B22 = {
@@ -424,7 +420,6 @@
 				3F0A2A332014BA2D009F9610 /* RunningApps.storyboard in Resources */,
 				3F820C412219B63F00004813 /* Preferences.storyboard in Resources */,
 				3F883E76240050A600E2A7D7 /* Main.xib in Resources */,
-				3FBE4C292222AB0200782647 /* dsa_pub.pem in Resources */,
 				3F3433341E50C53A009F4D86 /* ReleaseNotes.rtf in Resources */,
 				3F6D52CA2069659800517E57 /* About.storyboard in Resources */,
 				3F4ABD0E201937B30075B178 /* RulesEditor.storyboard in Resources */,
@@ -444,8 +439,10 @@
 			);
 			name = "Run Script";
 			outputPaths = (
+				"$(PROJECT_DIR)/$(INFOPLIST_FILE)",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			alwaysOutOfDate = 1;
 			shellPath = /bin/sh;
 			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
 		};
@@ -580,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -601,6 +599,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -609,9 +608,12 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q2E884V952;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -626,10 +628,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -640,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -661,6 +665,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -669,9 +674,12 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q2E884V952;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -680,9 +688,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -699,7 +708,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = Q2E884V952;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = JT8DLV7KYW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -710,7 +720,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.Fluor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -733,7 +743,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = Q2E884V952;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = JT8DLV7KYW;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -744,7 +755,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.5.0;
 				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.Fluor;
