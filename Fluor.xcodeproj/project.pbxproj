@@ -63,7 +63,8 @@
 		3FE7E0EA1D7CC01B00DC754D /* RulesEditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7E0E81D7CC01B00DC754D /* RulesEditorWindowController.swift */; };
 		3FF2410B1EDB4E0000E524CD /* SwitchMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */; };
 		3FF655CA20751D1600C8D2FC /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF655C820751D1600C8D2FC /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		86411143302B7B2800C2BEB0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86411142302B7B2800C2BEB0 /* Sparkle.framework */; };
+		8634999D302B899800DEB667 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634999B302B88D300DEB667 /* Sparkle.framework */; };
+		8634999E302B899800DEB667 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8634999B302B88D300DEB667 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8634999E302B899800DEB667 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +153,7 @@
 		3FF2410A1EDB4E0000E524CD /* SwitchMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchMethodViewController.swift; sourceTree = "<group>"; };
 		3FF655C820751D1600C8D2FC /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		3FF655C920751D1600C8D2FC /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
-		86411142302B7B2800C2BEB0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../Downloads/Sparkle-2.9.5/Sparkle.framework"; sourceTree = SOURCE_ROOT; };
+		8634999B302B88D300DEB667 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Fluor/Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +164,7 @@
 				3FE7B6DB245DF8450027DB39 /* SmoothOperators in Frameworks */,
 				3F16ECDD23E9D1AC008BC89A /* DefaultsWrapper in Frameworks */,
 				3F15629F23FEDD0000CD0773 /* CoreGeometry in Frameworks */,
-				86411143302B7B2800C2BEB0 /* Sparkle.framework in Frameworks */,
+				8634999D302B899800DEB667 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +277,7 @@
 		3F7291EC2025BD1E005C9B70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86411142302B7B2800C2BEB0 /* Sparkle.framework */,
+				8634999B302B88D300DEB667 /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -432,6 +434,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		3FD11B2F207A320800742415 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -442,7 +445,6 @@
 				"$(PROJECT_DIR)/$(INFOPLIST_FILE)",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			alwaysOutOfDate = 1;
 			shellPath = /bin/sh;
 			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
 		};
